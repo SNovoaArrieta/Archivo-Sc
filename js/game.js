@@ -59,113 +59,113 @@ const evidence = [
 
 const questions = [
   {
-    tag: "PEQUEÑO DETALLE",
-    text: "¿Qué cosa pequeña puede hacer alguien por ti y logra mejorarte el día casi de inmediato?",
-    hint: "Puede ser un mensaje, una llamada, una forma de hablarte o cualquier detalle simple.",
+    tag: "ME DA CURIOSIDAD",
+    text: "Bonita, dime una cosa de ti que casi nadie sepa pero que te dé risa contar.",
+    hint: "Puede ser una manía, una costumbre rara o una bobada. No te voy a juzgar... mucho.",
   },
   {
-    tag: "DÍAS PESADOS",
-    text: "Cuando estás muy cansada o tienes demasiadas cosas encima, ¿cómo prefieres que te acompañen?",
-    hint: "¿Hablar, distraerte, escucharte, darte espacio, hacerte reír? Quiero aprender bien esa parte de ti.",
+    tag: "CUANDO ESTÁS BOLITA",
+    text: "Cuando llegas cansada de verdad y ya no quieres saber nada de nadie, ¿qué te ayuda más conmigo?",
+    hint: "Que te distraiga, que te escuche, que me quede ahí contigo o que te deje descansar. Quiero saberlo bien y no andar adivinando.",
   },
   {
-    tag: "FORMA DE CARIÑO",
-    text: "Aunque estemos lejos, ¿qué cosas te hacen sentir más querida o acompañada por mí?",
-    hint: "No tiene que ser algo grande. Justamente quiero saber qué detalles sí te llegan de verdad.",
+    tag: "DESDE LEJOS",
+    text: "¿Qué cosa hago yo que sí te hace sentir acompañada aunque estemos detrás de una pantalla?",
+    hint: "Puede ser una llamada, un audio, que te moleste, que te deje tranquila... lo que de verdad te funcione.",
   },
   {
-    tag: "DATO CURIOSO",
-    text: "¿Qué hábito, manía o pequeña rareza tuya crees que todavía no conozco?",
-    hint: "El expediente acepta información vergonzosa, absurda o completamente inútil.",
+    tag: "OBSESIÓN ACTUAL",
+    text: "¿Qué te tiene obsesionada últimamente?",
+    hint: "Canción, juego, serie, comida, video, LEGO, cualquier cosa. Necesito actualizar mis archivos sobre ti.",
   },
   {
-    tag: "TU LUGAR SEGURO",
-    text: "¿Qué haces normalmente cuando necesitas sentirte tranquila otra vez?",
-    hint: "Puede ser algo que ves, haces, comes, piensas o simplemente una rutina tuya.",
+    tag: "VERSIÓN PEQUEÑA DE TI",
+    text: "¿Qué cosa te gustaba muchísimo de niña y todavía te sigue gustando?",
+    hint: "Quiero conocer también esas cosas tuyas que vienen de hace años.",
   },
   {
-    tag: "RECUERDO FAVORITO",
-    text: "¿Cuál es un recuerdo de tu infancia o adolescencia que todavía te hace sonreír cuando lo piensas?",
-    hint: "Quiero conocer también las historias tuyas de antes de que yo apareciera.",
+    tag: "CONFIESA",
+    text: "¿Hay algo que te dé un poquito de pena admitir que te gusta demasiado?",
+    hint: "Prometo usar esta información de forma responsable. Bueno... probablemente.",
   },
   {
-    tag: "GUSTO MUY TUYO",
-    text: "¿Qué cosa te gusta muchísimo y sientes que la mayoría de la gente no entiende tanto como tú?",
-    hint: "Puede ser algo serio o una obsesión completamente específica.",
+    tag: "PARA NO METER LA PATA",
+    text: "¿Qué cosa pequeña puede ponerte de mal humor rapidísimo?",
+    hint: "Información importante para mi supervivencia y para molestarte con un poquito más de criterio.",
   },
   {
-    tag: "ALGO QUE QUIERES QUE SEPA",
-    text: "¿Hay algo de ti que te gustaría que yo entendiera mejor y que quizás nunca te he preguntado?",
-    hint: "No tiene que ser profundo si no quieres. Tú decides hasta dónde llega este expediente.",
+    tag: "DE MÍ",
+    text: "¿Qué cosa hago yo que te calma, te da paz o simplemente te hace sentir bien?",
+    hint: "Aunque sea una bobada. Esas son justo las cosas que quiero saber.",
   },
   {
-    tag: "VERSIÓN FELIZ",
-    text: "¿Cómo es un día que para ti se siente realmente bonito, incluso si no pasa nada extraordinario?",
-    hint: "Quiero saber qué cosas simples hacen que un día se sienta bien para ti.",
+    tag: "TODAVÍA NO TE CONOZCO TODA",
+    text: "¿Qué parte de ti sientes que todavía no conozco bien?",
+    hint: "No tiene que ser profunda. Puede ser un gusto, una historia, una forma tuya de pensar o cualquier detalle.",
   },
   {
-    tag: "ENTRE NOSOTRAS",
-    text: "¿Qué es algo que te gusta de la forma en que nos relacionamos y te gustaría que nunca cambiara?",
-    hint: "Esta sí queda oficialmente archivada como información importante.",
+    tag: "ALGO QUE SÍ PODEMOS HACER",
+    text: "¿Qué te gustaría que hiciéramos más seguido estando lejos, pero algo que sí podamos hacer de verdad?",
+    hint: "Nada de planes imposibles. Algo de nosotras que podamos empezar cualquier día.",
   },
 ];
 
 const choices = [
   {
-    question: "Después de un día pesado, ¿qué te haría sentir más acompañada por mí?",
-    a: "Una llamada tranquila aunque hablemos poco",
-    b: "Mensajes y audios durante la noche, sin presión",
-    aResult: "Resultado archivado: presencia tranquila. A veces estar ahí vale más que intentar arreglarlo todo.",
-    bResult: "Resultado archivado: compañía en pequeñas dosis. Presente, pero sin convertirlo en otra obligación.",
+    question: "Llegaste cansada del trabajo y estás en modo no quiero saber nada de la vida. ¿Qué hago?",
+    a: "Me quedo contigo tranquila y te dejo ser bolita",
+    b: "Empiezo a decir bobadas hasta sacarte por lo menos una risa",
+    aResult: "Anotado. No tengo que arreglar nada. Me quedo contigo y ya.",
+    bResult: "Perfecto. Entonces mi trabajo oficial es fastidiarte con cariño hasta que te rías aunque sea una vez.",
   },
   {
-    question: "Tenemos una noche solo para nosotras a distancia. ¿Qué te gustaría más?",
-    a: "Ver algo juntas y comentarlo durante la llamada",
-    b: "Hablar sin plan hasta que terminemos en cualquier tema",
-    aResult: "Protocolo aprobado: plan sencillo, pantalla compartida y derecho a criticar todo.",
-    bResult: "Protocolo aprobado: conversación sin rumbo. Alta probabilidad de perder la noción del tiempo.",
+    question: "Tenemos media hora juntas y ninguna sabe qué hacer. ¿Qué te provoca más?",
+    a: "Tetris, algún juego y ver quién acusa primero a la otra de hacer trampa",
+    b: "Compartir pantalla, ver cualquier cosa y terminar hablando de otro tema",
+    aResult: "Bien. Competencia innecesaria y acusaciones dudosas. Suena bastante a nosotras.",
+    bResult: "También muy nosotras: empezamos viendo una cosa y veinte minutos después estamos hablando de cualquier otra.",
   },
   {
-    question: "Si estás de mal humor y yo quiero ayudarte, ¿qué prefieres?",
-    a: "Que intente hacerte reír y distraerte",
-    b: "Que te escuche y no intente solucionar nada",
-    aResult: "Dato importante registrado: distraer primero, analizar después.",
-    bResult: "Dato importante registrado: acompañar sin convertir la conversación en una sesión de soluciones.",
+    question: "Me dan ganas de aparecerte con algo de la nada. ¿Qué te haría más ilusión?",
+    a: "Otra página rara hecha por mí porque claramente no aprendo",
+    b: "Un audio largo contándote alguna bobada o algo que pensé",
+    aResult: "Grave error. Acabas de darme permiso para seguir inventando páginas innecesarias.",
+    bResult: "Anotado. Menos producción, más yo hablando de cualquier cosa hasta que se me olvide cuál era el punto.",
   },
   {
-    question: "¿Qué tipo de detalle a distancia te gustaría recibir más seguido?",
-    a: "Algo inesperado: una página, una nota, una sorpresa pequeña",
-    b: "Algo simple y constante: mensajes, audios o llamadas",
-    aResult: "Preferencia detectada: pequeñas sorpresas. Sofi queda oficialmente autorizada para seguir inventando cosas raras.",
-    bResult: "Preferencia detectada: constancia. Menos espectáculo, más estar presente de verdad.",
+    question: "El trabajo te absorbió y desapareciste unas horas. ¿Qué prefieres que haga?",
+    a: "Te dejo un mensajito y respondes cuando puedas",
+    b: "No te lleno de mensajes y hablamos después cuando ya estés más libre",
+    aResult: "Perfecto. Te dejo algo para que sepas que estoy ahí y no te persigo por una respuesta.",
+    bResult: "También sirve. Te dejo respirar y después me cuentas cuando tengas cabeza para eso.",
   },
   {
-    question: "Si solo tenemos 20 minutos para compartir un día, ¿qué prefieres?",
-    a: "Videollamada rápida solo para vernos y hablar un rato",
-    b: "Mandarnos audios y contarnos cómo estuvo el día",
-    aResult: "Resultado: poco tiempo, pero compartido en tiempo real. El expediente lo considera suficiente para salvar una noche.",
-    bResult: "Resultado: conversación sin reloj. Ideal para días donde coincidir se vuelve imposible.",
+    question: "Estás de malas. Nivel: mejor no me mires feo por videollamada. ¿Qué te sirve más?",
+    a: "Me cuentas qué pasó y yo solo te escucho",
+    b: "Funamos el día entre las dos y te distraigo con cualquier estupidez",
+    aResult: "Anotado. Cierro la boca, escucho y no intento arreglarte la vida.",
+    bResult: "Perfecto. Si el día te trató mal, lo funamos entre las dos y seguimos con nuestra vida.",
   },
   {
-    question: "Cuando no coincidimos por horarios o trabajo, ¿qué te gustaría que hiciéramos?",
-    a: "Dejarnos mensajes para responder cuando podamos",
-    b: "Guardar lo importante para una llamada después",
-    aResult: "Sistema asincrónico aprobado. Cero presión por responder inmediatamente.",
-    bResult: "Sistema de llamada pendiente aprobado. Algunas historias merecen ser contadas viendo la reacción de la otra.",
+    question: "Estamos en llamada y de repente ninguna está hablando. ¿Qué hacemos?",
+    a: "Nada. Nos quedamos ahí igual, cada una en lo suyo",
+    b: "Buscamos cualquier cosa para ver, jugar o comentar",
+    aResult: "Me gusta. No todo silencio tiene que llenarse. Podemos estar juntas y ya.",
+    bResult: "Sí, porque claramente dos minutos de silencio son suficientes para que yo empiece a inventar un plan.",
   },
   {
-    question: "¿Qué crees que nos ayuda más a sentirnos cerca estando lejos?",
-    a: "Compartir cosas pequeñas del día, aunque parezcan tontas",
-    b: "Reservar momentos especiales solo para nosotras",
-    aResult: "Hallazgo: la cercanía también se construye con cosas pequeñas y cotidianas.",
-    bResult: "Hallazgo: tener espacios solo de ustedes sigue siendo importante aunque sea detrás de una pantalla.",
+    question: "Si pudiera mejorar una sola cosa de cómo te acompaño desde lejos, ¿qué escogerías?",
+    a: "Que te pregunte más por las cosas pequeñas de tu día",
+    b: "Que inventemos más ratitos solo para nosotras",
+    aResult: "Anotado. Quiero conocer también las cosas tontas del día, no solo cuando pasa algo grande.",
+    bResult: "Anotado. No tienen que ser planes enormes. Solo ratitos que sean nuestros.",
   },
   {
-    question: "Si tuvieras que poner una regla para nuestra distancia, ¿cuál sería?",
-    a: "Nunca asumir que la otra sabe lo que sentimos: decirlo",
-    b: "No convertir la distancia en presión: hablar cuando podamos",
-    aResult: "Regla registrada: menos suposiciones, más claridad. Bastante útil para este expediente.",
-    bResult: "Regla registrada: presencia sin presión. Estar cerca no siempre significa estar disponibles todo el tiempo.",
+    question: "Última y esta sí me importa: cuando estés cansada y no tengas energía para nada, ¿qué quieres que recuerde?",
+    a: "Que no necesito ponerme bien para hablar contigo",
+    b: "Que puedo decirte que necesito espacio y no pasa nada",
+    aResult: "Eso sí quiero que lo tengas claro, bonita. No tienes que estar de buenas conmigo porque sí.",
+    bResult: "Y esto también. Si quieres espacio, me lo dices y ya. No me voy a ofender, dramática.",
   },
 ];
 
@@ -295,7 +295,7 @@ function bindChoices() {
 
       result.innerHTML = `
         <div class="choice-result">
-          <span>RESULTADO OFICIAL</span>
+          <span>ANOTADO</span>
           <p>${escapeHTML(text)}</p>
         </div>
         <button id="next-choice" class="document-button" type="button">
@@ -366,7 +366,7 @@ function openFolder(type) {
   }
 
   if (type === "choices") {
-    openModal("CARPETA 03 · DECISIONES", "Decisiones entre nosotras", choiceMarkup());
+    openModal("CARPETA 03 · DECISIONES", "Cosas que quiero saber de nosotras", choiceMarkup());
     bindChoices();
     return;
   }
