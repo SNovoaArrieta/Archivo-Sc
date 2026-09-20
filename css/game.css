@@ -879,3 +879,105 @@ button:focus-visible {
 .truth-facts article p {
   color: rgba(42,41,38,.78);
 }
+
+
+/* FINAL POLISH — physical case-file feel */
+
+.case-cover {
+  transform: rotate(-.35deg);
+}
+
+.case-cover__body::before {
+  content: "CASO ABIERTO";
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 5px 8px;
+  border: 1px solid rgba(43,41,37,.28);
+  color: rgba(43,41,37,.65);
+  font: 600 .62rem "DM Mono", monospace;
+  letter-spacing: .14em;
+}
+
+.desk::before {
+  content: "";
+  position: absolute;
+  inset: 18px;
+  pointer-events: none;
+  border: 1px solid rgba(255,255,255,.035);
+  border-radius: 20px;
+}
+
+.desk-note::after {
+  content: "";
+  position: absolute;
+  width: 74px;
+  height: 18px;
+  top: -8px;
+  left: 34px;
+  background: rgba(225,209,167,.62);
+  transform: rotate(-4deg);
+  box-shadow: 0 2px 4px rgba(0,0,0,.08);
+}
+
+.folder::before {
+  content: "";
+  position: absolute;
+  width: 34px;
+  height: 68px;
+  right: 30px;
+  top: -14px;
+  border: 3px solid rgba(69,65,57,.34);
+  border-bottom: 0;
+  border-radius: 18px 18px 0 0;
+  transform: rotate(9deg);
+  pointer-events: none;
+}
+
+.folder:nth-child(1) { transform: rotate(-.5deg); }
+.folder:nth-child(2) { transform: rotate(.35deg); }
+.folder:nth-child(3) { transform: rotate(.4deg); }
+.folder:nth-child(4) { transform: rotate(-.35deg); }
+
+.folder:nth-child(1):hover,
+.folder:nth-child(2):hover,
+.folder:nth-child(3):hover,
+.folder:nth-child(4):hover {
+  transform: translateY(-6px) rotate(0deg);
+}
+
+.document {
+  border-radius: 2px;
+}
+
+.document::after {
+  content: "SN / DAI";
+  position: absolute;
+  right: 32px;
+  bottom: 22px;
+  color: rgba(47,47,43,.22);
+  font: 600 .62rem "DM Mono", monospace;
+  letter-spacing: .16em;
+}
+
+.final-letter::before {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 22px;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-1deg);
+  background: rgba(214,198,160,.24);
+}
+
+.final-letter {
+  border-radius: 2px;
+}
+
+@media (max-width: 760px) {
+  .case-cover { transform: none; }
+  .folder:nth-child(1),
+  .folder:nth-child(2),
+  .folder:nth-child(3),
+  .folder:nth-child(4) { transform: none; }
+}
