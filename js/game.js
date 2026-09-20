@@ -205,6 +205,8 @@ function openModal(code, title, html) {
   modalTitle.textContent = title;
   modalContent.innerHTML = html;
   modal.classList.remove("is-hidden");
+  const documentPanel = modal.querySelector(".document");
+  if (documentPanel) documentPanel.scrollTop = 0;
   document.body.style.overflow = "hidden";
 }
 
