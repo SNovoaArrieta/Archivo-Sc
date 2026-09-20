@@ -59,113 +59,89 @@ const evidence = [
 
 const questions = [
   {
-    tag: "ME DA CURIOSIDAD",
-    text: "Bonita, dime una cosa de ti que casi nadie sepa pero que te dé risa contar.",
-    hint: "Puede ser una manía, una costumbre rara o una bobada. No te voy a juzgar... mucho.",
+    tag: "PISTA 01",
+    text: "El expediente dice que tienes una obsesión sospechosa con algunas cosas. ¿Cuál dirías que es tu obsesión más fuerte ahora mismo?",
+    hint: "Puede ser un juego, una serie, LEGO, comida, una canción o cualquier cosa que te tenga pegada últimamente.",
   },
   {
-    tag: "CUANDO ESTÁS BOLITA",
-    text: "Cuando llegas cansada de verdad y ya no quieres saber nada de nadie, ¿qué te ayuda más conmigo?",
-    hint: "Que te distraiga, que te escuche, que me quede ahí contigo o que te deje descansar. Quiero saberlo bien y no andar adivinando.",
+    tag: "PISTA 02",
+    text: "Si alguien quisiera reconocerte sin verte, ¿qué hábito o manía tuya lo delataría primero?",
+    hint: "Necesito información útil para identificar al sujeto.",
   },
   {
-    tag: "DESDE LEJOS",
-    text: "¿Qué cosa hago yo que sí te hace sentir acompañada aunque estemos detrás de una pantalla?",
-    hint: "Puede ser una llamada, un audio, que te moleste, que te deje tranquila... lo que de verdad te funcione.",
+    tag: "PISTA 03",
+    text: "¿Qué cosa te da risa casi siempre, aunque ya sepas que es una bobada?",
+    hint: "Toda investigación seria necesita saber qué rompe tu cara de seria.",
   },
   {
-    tag: "OBSESIÓN ACTUAL",
-    text: "¿Qué te tiene obsesionada últimamente?",
-    hint: "Canción, juego, serie, comida, video, LEGO, cualquier cosa. Necesito actualizar mis archivos sobre ti.",
+    tag: "PISTA 04",
+    text: "¿Cuál es un gusto tuyo que defenderías aunque otra persona diga que es raro?",
+    hint: "Aquí no juzgamos. Bueno, un poquito sí.",
   },
   {
-    tag: "VERSIÓN PEQUEÑA DE TI",
-    text: "¿Qué cosa te gustaba muchísimo de niña y todavía te sigue gustando?",
-    hint: "Quiero conocer también esas cosas tuyas que vienen de hace años.",
+    tag: "PISTA 05",
+    text: "¿Qué detalle pequeño de tu día probablemente nadie nota, pero para ti sí importa?",
+    hint: "Puede ser algo de tu rutina, una costumbre o una cosa mínima que siempre haces.",
   },
   {
-    tag: "CONFIESA",
-    text: "¿Hay algo que te dé un poquito de pena admitir que te gusta demasiado?",
-    hint: "Prometo usar esta información de forma responsable. Bueno... probablemente.",
+    tag: "PISTA 06",
+    text: "¿Qué cosa de tu infancia todavía sigue formando parte de ti ahora?",
+    hint: "Puede ser un gusto, una costumbre, una forma de pensar o algo que todavía te encanta.",
   },
   {
-    tag: "PARA NO METER LA PATA",
-    text: "¿Qué cosa pequeña puede ponerte de mal humor rapidísimo?",
-    hint: "Información importante para mi supervivencia y para molestarte con un poquito más de criterio.",
+    tag: "PISTA 07",
+    text: "Si tuvieras que dejar una pista falsa sobre ti para confundir a la investigadora, ¿qué dirías?",
+    hint: "Esta sí puede ser puro caos. La investigación lo permite.",
   },
   {
-    tag: "DE MÍ",
-    text: "¿Qué cosa hago yo que te calma, te da paz o simplemente te hace sentir bien?",
-    hint: "Aunque sea una bobada. Esas son justo las cosas que quiero saber.",
-  },
-  {
-    tag: "TODAVÍA NO TE CONOZCO TODA",
-    text: "¿Qué parte de ti sientes que todavía no conozco bien?",
-    hint: "No tiene que ser profunda. Puede ser un gusto, una historia, una forma tuya de pensar o cualquier detalle.",
-  },
-  {
-    tag: "ALGO QUE SÍ PODEMOS HACER",
-    text: "¿Qué te gustaría que hiciéramos más seguido estando lejos, pero algo que sí podamos hacer de verdad?",
-    hint: "Nada de planes imposibles. Algo de nosotras que podamos empezar cualquier día.",
+    tag: "PISTA 08",
+    text: "¿Qué dato sobre ti crees que yo todavía no tengo y debería estar en este expediente?",
+    hint: "Aquí puedes sabotear directamente mi investigación si quieres.",
   },
 ];
 
 const choices = [
   {
-    question: "Llegaste cansada del trabajo y estás en modo no quiero saber nada de la vida. ¿Qué hago?",
-    a: "Me quedo contigo tranquila y te dejo ser bolita",
-    b: "Empiezo a decir bobadas hasta sacarte por lo menos una risa",
-    aResult: "Anotado. No tengo que arreglar nada. Me quedo contigo y ya.",
-    bResult: "Perfecto. Entonces mi trabajo oficial es fastidiarte con cariño hasta que te rías aunque sea una vez.",
+    question: "Aparece una pista nueva: hay una caja cerrada con una nota que dice “solo Daiana sabría qué escoger”. ¿Qué hay adentro?",
+    a: "Algo relacionado con LEGO o videojuegos",
+    b: "Algo completamente random que nadie esperaría",
+    aResult: "Tiene sentido. La pista confirma que el sospechoso conoce demasiado bien tus gustos.",
+    bResult: "Perfecto. Entonces el caso se complica porque claramente todavía me faltan datos tuyos.",
   },
   {
-    question: "Tenemos media hora juntas y ninguna sabe qué hacer. ¿Qué te provoca más?",
-    a: "Tetris, algún juego y ver quién acusa primero a la otra de hacer trampa",
-    b: "Compartir pantalla, ver cualquier cosa y terminar hablando de otro tema",
-    aResult: "Bien. Competencia innecesaria y acusaciones dudosas. Suena bastante a nosotras.",
-    bResult: "También muy nosotras: empezamos viendo una cosa y veinte minutos después estamos hablando de cualquier otra.",
+    question: "Encontramos dos objetos en la escena. ¿Cuál te delata más?",
+    a: "Un control de videojuego abandonado",
+    b: "Una figura o pieza de LEGO fuera de lugar",
+    aResult: "Pista marcada como MUY SOSPECHOSA. Seguimos investigando.",
+    bResult: "Pista marcada como MUY SOSPECHOSA. El caso empieza a ponerse demasiado fácil.",
   },
   {
-    question: "Me dan ganas de aparecerte con algo de la nada. ¿Qué te haría más ilusión?",
-    a: "Otra página rara hecha por mí porque claramente no aprendo",
-    b: "Un audio largo contándote alguna bobada o algo que pensé",
-    aResult: "Grave error. Acabas de darme permiso para seguir inventando páginas innecesarias.",
-    bResult: "Anotado. Menos producción, más yo hablando de cualquier cosa hasta que se me olvide cuál era el punto.",
+    question: "El informe dice que el sujeto desaparece por horas. ¿Cuál explicación es más probable?",
+    a: "Estaba ocupada con algo y perdió la noción del tiempo",
+    b: "Se quedó entretenida con algo y simplemente desapareció del mapa",
+    aResult: "Explicación razonable. El expediente acepta esta versión por ahora.",
+    bResult: "Explicación bastante creíble. Cero preguntas adicionales.",
   },
   {
-    question: "El trabajo te absorbió y desapareciste unas horas. ¿Qué prefieres que haga?",
-    a: "Te dejo un mensajito y respondes cuando puedas",
-    b: "No te lleno de mensajes y hablamos después cuando ya estés más libre",
-    aResult: "Perfecto. Te dejo algo para que sepas que estoy ahí y no te persigo por una respuesta.",
-    bResult: "También sirve. Te dejo respirar y después me cuentas cuando tengas cabeza para eso.",
+    question: "Hay una grabación donde alguien se ríe por una bobada. ¿Quién crees que empezó?",
+    a: "Yo, claramente",
+    b: "Tú, pero después intentaste hacerte la seria",
+    aResult: "Eso suena peligrosamente posible. Anotado.",
+    bResult: "También suena peligrosamente posible. El caso sigue abierto.",
   },
   {
-    question: "Estás de malas. Nivel: mejor no me mires feo por videollamada. ¿Qué te sirve más?",
-    a: "Me cuentas qué pasó y yo solo te escucho",
-    b: "Funamos el día entre las dos y te distraigo con cualquier estupidez",
-    aResult: "Anotado. Cierro la boca, escucho y no intento arreglarte la vida.",
-    bResult: "Perfecto. Si el día te trató mal, lo funamos entre las dos y seguimos con nuestra vida.",
+    question: "Tenemos que identificarte entre diez personas solo por una pista. ¿Cuál funcionaría mejor?",
+    a: "Tus gustos y obsesiones",
+    b: "Tus manías y forma de hablar",
+    aResult: "Buena elección. Es difícil esconder lo que de verdad te gusta.",
+    bResult: "Mejor todavía. Las manías siempre traicionan al sospechoso.",
   },
   {
-    question: "Estamos en llamada y de repente ninguna está hablando. ¿Qué hacemos?",
-    a: "Nada. Nos quedamos ahí igual, cada una en lo suyo",
-    b: "Buscamos cualquier cosa para ver, jugar o comentar",
-    aResult: "Me gusta. No todo silencio tiene que llenarse. Podemos estar juntas y ya.",
-    bResult: "Sí, porque claramente dos minutos de silencio son suficientes para que yo empiece a inventar un plan.",
-  },
-  {
-    question: "Si pudiera mejorar una sola cosa de cómo te acompaño desde lejos, ¿qué escogerías?",
-    a: "Que te pregunte más por las cosas pequeñas de tu día",
-    b: "Que inventemos más ratitos solo para nosotras",
-    aResult: "Anotado. Quiero conocer también las cosas tontas del día, no solo cuando pasa algo grande.",
-    bResult: "Anotado. No tienen que ser planes enormes. Solo ratitos que sean nuestros.",
-  },
-  {
-    question: "Última y esta sí me importa: cuando estés cansada y no tengas energía para nada, ¿qué quieres que recuerde?",
-    a: "Que no necesito ponerme bien para hablar contigo",
-    b: "Que puedo decirte que necesito espacio y no pasa nada",
-    aResult: "Eso sí quiero que lo tengas claro, bonita. No tienes que estar de buenas conmigo porque sí.",
-    bResult: "Y esto también. Si quieres espacio, me lo dices y ya. No me voy a ofender, dramática.",
+    question: "Última decisión antes de cerrar esta carpeta: ¿qué debería investigar más sobre ti?",
+    a: "Tus gustos y cosas que te emocionan",
+    b: "Tus historias, recuerdos y rarezas",
+    aResult: "Perfecto. Entonces todavía me queda bastante material para futuras investigaciones.",
+    bResult: "Perfecto. Esa parte suena más peligrosa porque seguramente vienen demasiadas historias.",
   },
 ];
 
@@ -360,13 +336,13 @@ function openFolder(type) {
   }
 
   if (type === "questions") {
-    openModal("CARPETA 02 · INTERROGATORIO", "Para conocerte mejor", questionMarkup());
+    openModal("CARPETA 02 · INTERROGATORIO", "Interrogatorio del caso", questionMarkup());
     bindQuestionButton();
     return;
   }
 
   if (type === "choices") {
-    openModal("CARPETA 03 · DECISIONES", "Cosas que quiero saber de nosotras", choiceMarkup());
+    openModal("CARPETA 03 · DECISIONES", "Reconstrucción de los hechos", choiceMarkup());
     bindChoices();
     return;
   }
