@@ -3,45 +3,142 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#101419" />
-  <title>Operación Banana — Sofi & Daiana</title>
+  <meta name="theme-color" content="#0e1319" />
+  <title>Archivo Secreto — Daiana</title>
   <link rel="stylesheet" href="./css/game.css" />
 </head>
 <body>
-  <main class="game-app">
-    <header class="topbar">
-      <div class="brand">
-        <span>SOFI & DAIANA</span>
-        <strong>OPERACIÓN BANANA</strong>
-      </div>
-      <span id="mission-label" class="mission-label">PRÓLOGO</span>
-    </header>
+  <main id="app" class="app">
+    <section id="intro" class="intro-screen">
+      <div class="intro-grid"></div>
 
-    <section class="screen">
-      <canvas id="game-canvas" width="1280" height="720" aria-label="Juego Operación Banana"></canvas>
-
-      <div id="scene-card" class="scene-card">
-        <p id="scene-kicker" class="scene-card__kicker"></p>
-        <h1 id="scene-title"></h1>
-        <p id="scene-copy" class="scene-card__copy"></p>
-        <div id="scene-actions" class="scene-actions"></div>
-      </div>
-
-      <div id="game-hud" class="game-hud is-hidden">
-        <div class="hud-copy">
-          <strong id="hud-title"></strong>
-          <span id="hud-help"></span>
+      <article class="case-cover">
+        <div class="case-cover__top">
+          <span class="tiny-label">ARCHIVO RESERVADO · NIVEL 07</span>
+          <span class="case-number">SN–DAI–1909</span>
         </div>
-        <div id="hud-progress" class="hud-progress"></div>
-      </div>
 
-      <article id="final-card" class="final-card is-hidden">
-        <p class="final-card__eyebrow">SOFI & DAIANA</p>
-        <h2>MISIÓN COMPLETADA</h2>
-        <p id="final-message"></p>
+        <div class="case-stamp">CONFIDENCIAL</div>
+
+        <div class="case-cover__body">
+          <p class="eyebrow">SUJETO DE INVESTIGACIÓN</p>
+          <h1>DAIANA</h1>
+          <p class="case-status">Estado: sospechosamente importante para Sofi.</p>
+
+          <div class="case-meta">
+            <div><span>Responsable</span><strong>Sofi</strong></div>
+            <div><span>Prioridad</span><strong>Alta</strong></div>
+            <div><span>Acceso</span><strong>Solo nosotras</strong></div>
+          </div>
+        </div>
+
+        <button id="open-case" class="primary-action" type="button">
+          ABRIR EXPEDIENTE
+          <span aria-hidden="true">→</span>
+        </button>
+
+        <p class="microcopy">Advertencia: el contenido puede incluir acusaciones sin fundamento, preguntas innecesarias y pruebas bastante sospechosas.</p>
       </article>
+    </section>
 
-      <div id="toast" class="toast is-hidden"></div>
+    <section id="dashboard" class="dashboard is-hidden" aria-live="polite">
+      <header class="dashboard-header">
+        <div>
+          <span class="tiny-label">ARCHIVO SECRETO</span>
+          <h2>Expediente Daiana</h2>
+        </div>
+
+        <div class="progress-wrap">
+          <span id="progress-text">0/4 carpetas revisadas</span>
+          <div class="progress-track"><span id="progress-bar"></span></div>
+        </div>
+      </header>
+
+      <section class="desk">
+        <div class="desk-note">
+          <span class="pin"></span>
+          <p>Daiana decide qué carpeta abrimos primero.</p>
+          <small>No hay orden correcto. Esa sería demasiada organización para este expediente.</small>
+        </div>
+
+        <div class="folder-grid">
+          <button class="folder folder--amber" data-folder="evidence" type="button">
+            <span class="folder-tab">CARPETA 01</span>
+            <span class="folder-code">EVIDENCIA</span>
+            <strong>Evidencia cuestionable</strong>
+            <small>Pruebas recopiladas sin ningún rigor científico.</small>
+            <span class="folder-status">ABRIR</span>
+          </button>
+
+          <button class="folder folder--blue" data-folder="questions" type="button">
+            <span class="folder-tab">CARPETA 02</span>
+            <span class="folder-code">INTERROGATORIO</span>
+            <strong>Preguntas rápidas</strong>
+            <small>Respuestas en vivo. Sin tiempo para preparar defensa.</small>
+            <span class="folder-status">ABRIR</span>
+          </button>
+
+          <button class="folder folder--rose" data-folder="choices" type="button">
+            <span class="folder-tab">CARPETA 03</span>
+            <span class="folder-code">DECISIONES</span>
+            <strong>Asuntos importantes</strong>
+            <small>Decisiones completamente serias. Claramente.</small>
+            <span class="folder-status">ABRIR</span>
+          </button>
+
+          <button class="folder folder--green" data-folder="truth" type="button">
+            <span class="folder-tab">CARPETA 04</span>
+            <span class="folder-code">CLASIFICADO</span>
+            <strong>Lo que quería decirte</strong>
+            <small>La única carpeta que sí tiene algo de seriedad.</small>
+            <span class="folder-status">ABRIR</span>
+          </button>
+        </div>
+
+        <button id="final-report" class="final-report is-hidden" type="button">
+          <span>INVESTIGACIÓN COMPLETADA</span>
+          <strong>VER INFORME FINAL</strong>
+        </button>
+      </section>
+    </section>
+
+    <div id="modal" class="modal is-hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-backdrop" data-close-modal></div>
+      <article class="document">
+        <header class="document-header">
+          <div>
+            <span id="modal-code" class="tiny-label"></span>
+            <h3 id="modal-title"></h3>
+          </div>
+          <button class="close-button" type="button" data-close-modal aria-label="Cerrar">×</button>
+        </header>
+        <div id="modal-content" class="document-content"></div>
+      </article>
+    </div>
+
+    <section id="final-screen" class="final-screen is-hidden">
+      <div class="stars"></div>
+      <div class="final-glow"></div>
+
+      <article class="final-letter">
+        <span class="tiny-label">INFORME FINAL · CASO CERRADO</span>
+        <h2>Conclusión de la investigación</h2>
+        <p class="final-verdict">Daiana sigue siendo sospechosamente importante para Sofi.</p>
+
+        <div class="final-copy">
+          <p>Bueno bonita, claramente necesitaba inventarme alguna bobada para hoy.</p>
+          <p>No quería hacer algo complicado ni ponerte a pensar demasiado después de estos días tan pesados. Solo quería robarte un rato, hacerte reír y recordarte que me gusta mucho tenerte en mi vida.</p>
+          <p>Me gustan nuestras conversaciones, molestarte, escucharte, compartir cosas simples contigo y hasta estos planes raros que termino inventando.</p>
+          <p>Así que sí: todo este expediente fue una excusa bastante elaborada para decirte que eres muy importante para mí y que te quiero.</p>
+        </div>
+
+        <div class="final-signature">
+          <span>Archivado por</span>
+          <strong>Sofi</strong>
+        </div>
+
+        <button id="back-to-files" class="secondary-action" type="button">VOLVER AL EXPEDIENTE</button>
+      </article>
     </section>
   </main>
 
