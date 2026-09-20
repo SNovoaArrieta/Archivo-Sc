@@ -45,9 +45,9 @@ const evidence = [
   },
   {
     code: "OBS-05",
-    title: "Impacto en días pesados",
-    finding: "Incluso cuando el día ha sido largo, hablar un rato con ella puede cambiar por completo el tono de la noche. Este efecto ha sido observado en más de una ocasión.",
-    status: "CONFIRMADO",
+    title: "Efecto llamada inesperadamente larga",
+    finding: "Una llamada que supuestamente iba a ser corta puede terminar bastante después y con cinco temas nuevos abiertos. Nadie sabe quién tiene la culpa.",
+    status: "RECURRENTE",
   },
   {
     code: "OBS-06",
