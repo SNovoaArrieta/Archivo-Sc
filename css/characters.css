@@ -1,0 +1,36 @@
+/*
+  IMPORTANTE
+  ==========
+  Este archivo NO intenta dibujar los personajes finales con formas CSS.
+
+  Los diseños de Sofi y Daiana se construirán como assets reutilizables
+  (preferiblemente SVG) y se insertarán en los .character-slot.
+
+  Así evitamos que cada escena termine mostrando personajes diferentes.
+*/
+
+.character-asset {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  user-select: none;
+  pointer-events: none;
+}
+
+.character-slot[data-character="sofi"] {
+  --character-accent: #567fa6;
+}
+
+.character-slot[data-character="daiana"] {
+  --character-accent: #765f86;
+}
+
+/*
+  Reglas bloqueadas para Daiana:
+  - cabello castaño oscuro
+  - largo
+  - suelto
+  - visible por ambos lados y detrás del personaje
+  - diseño independiente de Sofi
+*/
