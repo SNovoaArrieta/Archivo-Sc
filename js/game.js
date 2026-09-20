@@ -59,39 +59,54 @@ const evidence = [
 
 const questions = [
   {
-    tag: "CALENTAMIENTO",
-    text: "Si pudiéramos pedir cualquier cosa para comer ahora mismo y apareciera mágicamente, ¿qué pedirías?",
-    hint: "Respuesta rápida. No vale decir “no sé”. El expediente exige compromiso.",
+    tag: "PEQUEÑO DETALLE",
+    text: "¿Qué cosa pequeña puede hacer alguien por ti y logra mejorarte el día casi de inmediato?",
+    hint: "Puede ser un mensaje, una llamada, una forma de hablarte o cualquier detalle simple.",
   },
   {
-    tag: "PLAN IMPROVISADO",
-    text: "Mañana nos regalan un día completamente libre. ¿Lo usamos para salir, dormir, jugar, comer o desaparecer del mundo?",
-    hint: "Puedes mezclar opciones. Este interrogatorio acepta caos.",
+    tag: "DÍAS PESADOS",
+    text: "Cuando estás muy cansada o tienes demasiadas cosas encima, ¿cómo prefieres que te acompañen?",
+    hint: "¿Hablar, distraerte, escucharte, darte espacio, hacerte reír? Quiero aprender bien esa parte de ti.",
   },
   {
-    tag: "CONFESIÓN MENOR",
-    text: "¿Qué cosa mía te da risa incluso cuando intentas hacerte la seria?",
-    hint: "El investigador principal solicita sinceridad, aunque pueda arrepentirse.",
+    tag: "FORMA DE CARIÑO",
+    text: "Aunque estemos lejos, ¿qué cosas te hacen sentir más querida o acompañada por mí?",
+    hint: "No tiene que ser algo grande. Justamente quiero saber qué detalles sí te llegan de verdad.",
   },
   {
-    tag: "CASO HIPOTÉTICO",
-    text: "Nos dejan encerradas toda una noche en una tienda enorme. ¿A qué sección iríamos primero?",
-    hint: "Puntos extra si la respuesta incluye LEGO, comida o algo completamente innecesario.",
+    tag: "DATO CURIOSO",
+    text: "¿Qué hábito, manía o pequeña rareza tuya crees que todavía no conozco?",
+    hint: "El expediente acepta información vergonzosa, absurda o completamente inútil.",
   },
   {
-    tag: "DETALLE SOSPECHOSO",
-    text: "¿Qué cosa pequeña de mí has notado que crees que yo ni siquiera sé que hago?",
-    hint: "Esta pregunta puede revelar información clasificada.",
+    tag: "TU LUGAR SEGURO",
+    text: "¿Qué haces normalmente cuando necesitas sentirte tranquila otra vez?",
+    hint: "Puede ser algo que ves, haces, comes, piensas o simplemente una rutina tuya.",
   },
   {
-    tag: "ARCHIVO PERSONAL",
-    text: "¿Qué momento sencillo conmigo guardarías aunque no haya sido nada “especial”?",
-    hint: "No tiene que ser algo grande. Justamente esa es la idea.",
+    tag: "RECUERDO FAVORITO",
+    text: "¿Cuál es un recuerdo de tu infancia o adolescencia que todavía te hace sonreír cuando lo piensas?",
+    hint: "Quiero conocer también las historias tuyas de antes de que yo apareciera.",
   },
   {
-    tag: "PLAN PENDIENTE",
-    text: "Cuando podamos compartir un día completo en el mismo lugar, ¿qué te gustaría que hiciéramos primero?",
-    hint: "No es contrato. Pero la investigadora podría tomar notas.",
+    tag: "GUSTO MUY TUYO",
+    text: "¿Qué cosa te gusta muchísimo y sientes que la mayoría de la gente no entiende tanto como tú?",
+    hint: "Puede ser algo serio o una obsesión completamente específica.",
+  },
+  {
+    tag: "ALGO QUE QUIERES QUE SEPA",
+    text: "¿Hay algo de ti que te gustaría que yo entendiera mejor y que quizás nunca te he preguntado?",
+    hint: "No tiene que ser profundo si no quieres. Tú decides hasta dónde llega este expediente.",
+  },
+  {
+    tag: "VERSIÓN FELIZ",
+    text: "¿Cómo es un día que para ti se siente realmente bonito, incluso si no pasa nada extraordinario?",
+    hint: "Quiero saber qué cosas simples hacen que un día se sienta bien para ti.",
+  },
+  {
+    tag: "ENTRE NOSOTRAS",
+    text: "¿Qué es algo que te gusta de la forma en que nos relacionamos y te gustaría que nunca cambiara?",
+    hint: "Esta sí queda oficialmente archivada como información importante.",
   },
 ];
 
@@ -331,7 +346,7 @@ function openFolder(type) {
   }
 
   if (type === "questions") {
-    openModal("CARPETA 02 · INTERROGATORIO", "Interrogatorio no autorizado", questionMarkup());
+    openModal("CARPETA 02 · INTERROGATORIO", "Para conocerte mejor", questionMarkup());
     bindQuestionButton();
     return;
   }
