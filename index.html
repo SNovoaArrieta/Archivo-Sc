@@ -3,30 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#111318" />
+  <meta name="theme-color" content="#111418" />
   <title>Operación Banana — Sofi & Daiana</title>
-
   <link rel="stylesheet" href="./css/game.css" />
-  <link rel="stylesheet" href="./css/characters.css" />
-  <link rel="stylesheet" href="./css/animations.css" />
 </head>
 <body>
-  <main id="game" class="game-shell" aria-live="polite">
-    <header class="game-toolbar">
-      <div class="game-brand">
-        <span class="game-brand__eyebrow">SOFI & DAIANA</span>
+  <main class="game-app">
+    <header class="topbar">
+      <div>
+        <span class="topbar__eyebrow">SOFI & DAIANA</span>
         <strong>OPERACIÓN BANANA</strong>
       </div>
-
-      <button id="sound-toggle" class="icon-button" type="button" aria-pressed="false">
-        Sonido: OFF
-      </button>
+      <div class="topbar__right">
+        <span id="mission-label" class="mission-label">PRÓLOGO</span>
+        <button id="sound-toggle" class="sound-button" type="button" aria-pressed="false">SONIDO OFF</button>
+      </div>
     </header>
 
-    <section id="stage" class="game-stage" aria-label="Escena del juego"></section>
-  </main>
+    <section class="screen">
+      <canvas id="game-canvas" width="1280" height="720" aria-label="Operación Banana"></canvas>
 
-  <noscript>Este juego necesita JavaScript activado.</noscript>
+      <div id="scene-card" class="scene-card">
+        <p id="scene-kicker" class="scene-card__kicker"></p>
+        <h1 id="scene-title"></h1>
+        <p id="scene-copy" class="scene-card__copy"></p>
+        <div id="scene-actions" class="scene-actions"></div>
+      </div>
+
+      <div id="game-hud" class="game-hud is-hidden">
+        <div>
+          <span id="hud-title" class="hud-title"></span>
+          <span id="hud-help" class="hud-help"></span>
+        </div>
+        <div id="hud-progress" class="hud-progress"></div>
+      </div>
+
+      <article id="final-card" class="final-card is-hidden">
+        <p class="final-card__eyebrow">SOFI & DAIANA</p>
+        <h2>MISIÓN COMPLETADA</h2>
+        <p id="final-message"></p>
+      </article>
+
+      <div id="toast" class="toast is-hidden"></div>
+    </section>
+  </main>
 
   <script type="module" src="./js/game.js"></script>
 </body>
