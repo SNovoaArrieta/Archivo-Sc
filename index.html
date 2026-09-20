@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#111318" />
+  <title>Operación Banana — Sofi & Daiana</title>
+
+  <link rel="stylesheet" href="./css/game.css" />
+  <link rel="stylesheet" href="./css/characters.css" />
+  <link rel="stylesheet" href="./css/animations.css" />
+</head>
+<body>
+  <main id="game" class="game-shell" aria-live="polite">
+    <header class="game-toolbar">
+      <div class="game-brand">
+        <span class="game-brand__eyebrow">SOFI & DAIANA</span>
+        <strong>OPERACIÓN BANANA</strong>
+      </div>
+
+      <button id="sound-toggle" class="icon-button" type="button" aria-pressed="false">
+        Sonido: OFF
+      </button>
+    </header>
+
+    <section id="stage" class="game-stage" aria-label="Escena del juego"></section>
+  </main>
+
+  <noscript>Este juego necesita JavaScript activado.</noscript>
+
+  <script type="module" src="./js/game.js"></script>
+</body>
+</html>
