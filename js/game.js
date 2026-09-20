@@ -40,7 +40,7 @@ const evidence = [
   {
     code: "OBS-04",
     title: "Intereses de alto riesgo",
-    finding: "Se detectó afinidad por LEGO, videojuegos y Minions. Esto incrementa peligrosamente la posibilidad de que Sofi siga encontrando excusas para inventar planes raros.",
+    finding: "Se detectó afinidad por Lego, videojuegos y Minions. Esto incrementa peligrosamente la posibilidad de que Sofi siga encontrando excusas para inventar planes raros.",
     status: "RIESGO ALTO",
   },
   {
@@ -61,7 +61,7 @@ const questions = [
   {
     tag: "PISTA 01",
     text: "El expediente dice que tienes una obsesión sospechosa con algunas cosas. ¿Cuál dirías que es tu obsesión más fuerte ahora mismo?",
-    hint: "Puede ser un juego, una serie, LEGO, comida, una canción o cualquier cosa que te tenga pegada últimamente.",
+    hint: "Puede ser un juego, una serie, Lego, comida, una canción o cualquier cosa que te tenga pegada últimamente.",
   },
   {
     tag: "PISTA 02",
