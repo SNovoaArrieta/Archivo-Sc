@@ -1,78 +1,106 @@
-# Operación Banana — diseño y flujo definitivo
+# Operación Banana — dirección definitiva
 
-## Qué debe sentirse
+## Objetivo
 
-Una aventura corta y cinematográfica para jugar durante una videollamada. No es una landing page ni una colección de pantallas con botones.
+Juego corto para compartir pantalla durante una videollamada. Debe sentirse como una aventura ilustrada y no como una página web.
 
-Prioridad: computador, 16:9, 5–10 minutos.
+Duración objetivo: 7–12 minutos.
 
-## Dirección visual
+## Dirección visual bloqueada
 
-- ilustración cartoon cinematográfica
-- luz cálida y profundidad
-- escenarios completos
-- una estética consistente de principio a fin
-- UI discreta e integrada
-- personajes reutilizados en todas las escenas
+La referencia es el diseño aprobado anteriormente: escenas tipo storyboard de videojuego, cálidas y cinematográficas.
 
-## Personajes
+- formato horizontal 16:9
+- cartoon con sensación 3D
+- luz ámbar + sombras azul/verde
+- escenarios completos con profundidad
+- bosque, piedra, bóveda, caminos y vegetación detallados
+- interfaz mínima y oscura con acentos dorados
+- personajes grandes y expresivos
+- nada de cuadrículas visibles
+- nada de emojis usados como arte del juego
+- nada de personajes identificados con letras
 
 ### Sofi
-- personaje amarillo
+- personaje amarillo pequeño
 - cabello oscuro corto/recogido
-- gafas
+- gafas grandes
 - ropa azul
-- energía impulsiva y divertida
+- energía más impulsiva
 
 ### Daiana
-- personaje amarillo
-- cabello castaño oscuro
-- largo y suelto
+- personaje amarillo pequeño
+- diseño independiente de Sofi
+- cabello castaño oscuro, largo y SUELTO
 - cabello visible a ambos lados y detrás
-- ropa distinta
-- personalidad más tranquila
-- nunca debe verse como Sofi con una peluca
+- ropa diferente
+- expresión más tranquila y bonita
+- el cabello debe formar parte real de la silueta, no verse pegado
 
-## Estructura de misiones
+## Estructura del juego
 
 ### Prólogo — El robo
-Se presenta la Banana Dorada y el ladrón escapa. Daiana decide si correr o intentar seguirlo con discreción. Ambas rutas llegan naturalmente a la persecución.
+Presentación corta. El ladrón roba la Banana Dorada. Daiana elige correr o intentar seguirlo con discreción.
 
 ### Misión 01 — Sigue el rastro
-Nivel lateral jugable. Sofi se mueve con A/D o flechas y salta con W, flecha arriba o espacio. Daiana corre a su lado. Hay obstáculos, pero no Game Over.
+Persecución lateral jugable.
 
-### Misión 02 — La entrada
-La bóveda está bloqueada. Dos soluciones visuales:
-- usar la pieza que encaja en el mecanismo
-- tocar el botón NO TOCAR
+Controles:
+- A/D o izquierda/derecha
+- W, arriba o espacio: saltar
+- S o abajo: agacharse
 
-Las dos funcionan de forma distinta y graciosa.
+Hay obstáculos altos y bajos. Chocar no provoca Game Over, pero retrasa el progreso.
 
-### Misión 03 — El guardia
-La banana ya está visible. Daiana decide:
-- distraer al guardia bailando
-- ofrecerle otra banana
+### Misión 02 — Abre el camino
+Zona cenital tipo pequeño laberinto de jardín.
 
-### Misión 04 — Recuperación
-Cinemática corta: recuperan la Banana Dorada.
+Objetivo:
+- encontrar 3 piezas de construcción
+- evitar setos/muros
+- llegar a la entrada cuando las tres estén completas
 
-### Nivel secreto — El jardín
-Mapa cenital sin cuadrícula. Sofi debe encontrar:
-- LEGO
-- música
-- corazón
+No hay música ni coleccionables temáticos innecesarios.
 
-Después llega hasta Daiana. No hay vidas, cronómetro ni puntuación.
+### Misión 03 — Pasa al guardia
+Daiana elige la distracción:
+- bailar
+- ofrecer otra banana
+
+Después comienza una sección jugable:
+- avanzar por el corredor
+- observar cuándo el guardia está distraído
+- esconderse detrás de cajas
+- si te ve, vuelves al inicio del corredor, sin perder vidas
+
+### Misión 04 — La cerradura
+Puzzle corto de memoria.
+
+La bóveda muestra una secuencia de 4 símbolos. Sofi debe repetirla con teclas 1–4. Si falla, la secuencia se muestra de nuevo.
+
+### Recuperación
+Cinemática breve donde recuperan la Banana Dorada.
 
 ### Final
-Escena nocturna tranquila con Sofi, Daiana y la Banana Dorada. Se muestra el mensaje final sin modificar.
+Escena nocturna tranquila con Sofi y Daiana. Mostrar el mensaje final aprobado sin modificar.
 
-## Regla de diseño
+## Dificultad
 
-Cada misión debe tener:
-1. un objetivo visible,
-2. una acción concreta,
-3. una consecuencia visual,
-4. un avance claro a la siguiente parte.
+El juego debe requerir atención y coordinación, pero no debe castigar.
 
-No agregar misiones solo para alargar el juego.
+- sin vidas
+- sin Game Over
+- sin cronómetro
+- los fallos retrasan o reinician únicamente el reto actual
+- dificultad media-baja, suficiente para que no sea solo presionar botones
+
+## Regla de misión
+
+Cada misión necesita:
+1. objetivo comprensible,
+2. control o decisión real,
+3. posibilidad de equivocarse,
+4. reacción visual,
+5. transición lógica a la siguiente misión.
+
+No agregar contenido solo para alargar el juego.
