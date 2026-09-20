@@ -319,37 +319,37 @@ function bindChoices() {
 function truthMarkup() {
   return `
     <div class="truth-panel">
-      <div class="classified-strip">DECLARACIÓN DESCLASIFICADA POR ORDEN DE SOFI</div>
+      <div class="classified-strip">NOTA FINAL DE SOFI · SOLO PARA DAIANA</div>
 
-      <blockquote>“La parte importante de todo esto no era hacer algo perfecto. Era hacer algo pensado para ti.”</blockquote>
+      <blockquote>“Bueno bonita, ya que llegaste hasta aquí, te tocaba encontrar lo que realmente quería decirte.”</blockquote>
 
       <div class="truth-facts">
         <article>
-          <span>HALLAZGO 01</span>
-          <strong>Me gusta tenerte cerca incluso cuando no estamos haciendo nada especial.</strong>
-          <p>No necesito que cada conversación sea profunda ni que cada momento tenga algo extraordinario. Me gustan también las bobadas, los silencios, molestarte y simplemente saber de ti.</p>
+          <span>01</span>
+          <strong>Me gusta conocerte de verdad, no quedarme solo con lo que ya sé de ti.</strong>
+          <p>Por eso hice todo este caso. Me da curiosidad saber tus cosas raras, lo que piensas, lo que te gusta, las bobadas que haces y esas partes tuyas que todavía no conozco.</p>
         </article>
 
         <article>
-          <span>HALLAZGO 02</span>
-          <strong>No quiero que conmigo sientas que tienes que estar bien todo el tiempo.</strong>
-          <p>Si estás cansada, ocupada o simplemente no tienes energía, no pasa nada. También quiero compartir esa versión tuya, no solamente los días fáciles.</p>
+          <span>02</span>
+          <strong>También me gusta mucho la forma en la que somos tú y yo.</strong>
+          <p>La molestadera, las llamadas, hablar cualquier cosa, pasar de un tema serio a una estupidez en dos segundos... no sé, me gusta que contigo puedo tener todo eso.</p>
         </article>
 
         <article>
-          <span>HALLAZGO 03</span>
-          <strong>Me gusta descubrirte poco a poco.</strong>
-          <p>Las cosas que te gustan, lo que te da risa, lo que te fastidia, tus rarezas, tus ideas y hasta esas cosas pequeñas que probablemente tú no consideras importantes.</p>
+          <span>03</span>
+          <strong>Y sí, obviamente tenía que inventarme algo raro.</strong>
+          <p>Porque simplemente decirte “feliz Amor y Amistad” me parecía demasiado normal para mí. Así que terminé haciéndote un expediente entero. Muy razonable todo.</p>
         </article>
 
         <article>
-          <span>HALLAZGO 04</span>
-          <strong>Hoy solo quería hacerte sentir importante.</strong>
-          <p>No con algo enorme ni complicado. Solo reservar un rato para nosotras, hacerte reír un poco y decirte de una forma distinta que me alegra mucho tenerte en mi vida.</p>
+          <span>04</span>
+          <strong>Pero fuera de la bobada, sí quería que supieras algo.</strong>
+          <p>Me importas mucho, bonita. Me gusta tenerte en mi vida, seguir descubriendo cosas de ti y seguir construyendo esto a nuestra manera, aunque nos toque hacerlo a distancia.</p>
         </article>
       </div>
 
-      <p class="truth-sign">— Declaración voluntaria de Sofi. Cero arrepentimientos al momento de archivar.</p>
+      <p class="truth-sign">— Fin de la investigación. Por ahora.</p>
     </div>
   `;
 }
