@@ -1,58 +1,37 @@
-# Operación Banana — Sofi & Daiana
+# Archivo Secreto — Daiana
 
-Mini videojuego web pensado para jugar durante una videollamada compartiendo pantalla.
+Experiencia web interactiva creada para compartir pantalla durante una videollamada.
 
-## Objetivo
+## Concepto
 
-Construir una aventura corta, cálida y divertida en la que Sofi controla el juego y Daiana participa tomando decisiones durante la llamada.
+La experiencia simula un expediente confidencial sobre Daiana. Ella decide qué carpeta abrir mientras Sofi controla la pantalla.
+
+Incluye:
+
+- evidencia cuestionable
+- preguntas rápidas
+- decisiones absurdamente importantes
+- una carpeta clasificada
+- informe final
 
 ## Stack
 
 - HTML5
 - CSS3
 - JavaScript vanilla
-- Sin framework
-- Sin backend
+- sin framework
+- sin backend
+- sin dependencias de ejecución
 
-## Estructura
+## Ejecutar
 
-```
-.
-├── index.html
-├── css/
-│   ├── game.css
-│   ├── characters.css
-│   └── animations.css
-├── js/
-│   ├── game.js
-│   ├── scenes.js
-│   ├── player.js
-│   └── audio.js
-├── assets/
-│   ├── characters/
-│   ├── backgrounds/
-│   └── audio/
-└── docs/
-    └── DESIGN.md
-```
-
-## Dirección
-
-La prioridad es el diseño visual y la consistencia de personajes. No usar grids básicos, emojis como sustituto de arte, ni personajes diferentes entre escenas.
-
-La experiencia debe sentirse como un pequeño videojuego ilustrado en formato 16:9 para computador.
-
-## Desarrollo
-
-Abrir `index.html` directamente o levantar un servidor local sencillo.
-
-Ejemplo:
+Puedes abrir `index.html` directamente o usar un servidor local:
 
 ```bash
 python -m http.server 5500
 ```
 
-Luego abrir:
+Luego:
 
 ```
 http://localhost:5500
