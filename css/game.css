@@ -767,3 +767,115 @@ button:focus-visible {
     transition-duration: 1ms !important;
   }
 }
+
+/* ENRICHED CASE CONTENT */
+
+.case-summary,
+.case-verdict {
+  padding: 16px 18px;
+  border: 1px dashed rgba(49,49,44,.22);
+  background: rgba(255,255,255,.18);
+}
+
+.case-summary span,
+.case-verdict span,
+.classified-strip,
+.truth-facts article span,
+.choice-result span {
+  display: block;
+  color: rgba(50,49,45,.56);
+  font: 600 .66rem "DM Mono", monospace;
+  letter-spacing: .12em;
+}
+
+.case-summary p,
+.case-verdict p {
+  margin: 7px 0 0;
+  line-height: 1.55;
+}
+
+.case-verdict {
+  border-style: solid;
+  border-left: 4px solid rgba(151,66,57,.65);
+}
+
+.case-verdict strong {
+  display: block;
+  margin-top: 8px;
+  font: 600 1.28rem "Playfair Display", serif;
+}
+
+.evidence-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 9px;
+}
+
+.evidence-meta span {
+  margin: 0;
+}
+
+.evidence-meta em {
+  color: rgba(139,55,48,.7);
+  font: 700 .62rem "DM Mono", monospace;
+  font-style: normal;
+  letter-spacing: .1em;
+}
+
+.evidence-title {
+  display: block;
+  margin-bottom: 8px;
+  font: 600 1.3rem "Playfair Display", serif;
+}
+
+.question-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.question-tag {
+  padding: 5px 8px;
+  border: 1px solid rgba(43,43,39,.15);
+  color: rgba(44,43,39,.6);
+  font: 600 .62rem "DM Mono", monospace;
+  letter-spacing: .1em;
+}
+
+.choice-result span {
+  margin-bottom: 7px;
+}
+
+.choice-result p {
+  margin: 0;
+}
+
+.classified-strip {
+  padding: 9px 11px;
+  border: 1px solid rgba(139,55,48,.22);
+  color: rgba(139,55,48,.75);
+  background: rgba(139,55,48,.05);
+}
+
+.truth-facts {
+  display: grid;
+  gap: 16px;
+}
+
+.truth-facts article {
+  padding: 16px 18px;
+  border-left: 2px solid rgba(138,107,57,.38);
+  background: rgba(255,255,255,.12);
+}
+
+.truth-facts article strong {
+  display: block;
+  margin: 7px 0 8px;
+  font: 600 1.15rem/1.35 "Playfair Display", serif;
+}
+
+.truth-facts article p {
+  color: rgba(42,41,38,.78);
+}
