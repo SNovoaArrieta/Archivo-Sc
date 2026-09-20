@@ -112,46 +112,60 @@ const questions = [
 
 const choices = [
   {
-    question: "Día oficialmente horrible. Solo podemos ejecutar un protocolo:",
-    a: "Dormir 12 horas, desaparecer y responder mañana",
-    b: "Comida rica, película y cero conversaciones serias",
-    aResult: "PROTOCOLO SUEÑO PROFUNDO aprobado. Riesgo principal: despertar sin saber qué día es.",
-    bResult: "PROTOCOLO AISLAMIENTO CONFORTABLE aprobado. Requiere manta, comida y derecho a ignorar el mundo.",
+    question: "Después de un día pesado, ¿qué te haría sentir más acompañada por mí?",
+    a: "Una llamada tranquila aunque hablemos poco",
+    b: "Mensajes y audios durante la noche, sin presión",
+    aResult: "Resultado archivado: presencia tranquila. A veces estar ahí vale más que intentar arreglarlo todo.",
+    bResult: "Resultado archivado: compañía en pequeñas dosis. Presente, pero sin convertirlo en otra obligación.",
   },
   {
-    question: "Nos dan una habitación vacía y presupuesto irresponsable:",
-    a: "La convertimos en una sala LEGO gigante",
-    b: "La llenamos de Minions hasta que alguien se arrepienta",
-    aResult: "Decisión sorprendentemente razonable. Probabilidad de discutir por una pieza específica: 91%.",
-    bResult: "El comité solicita reconsiderar. Veinticinco Minions pueden constituir una amenaza acústica.",
+    question: "Tenemos una noche solo para nosotras a distancia. ¿Qué te gustaría más?",
+    a: "Ver algo juntas y comentarlo durante la llamada",
+    b: "Hablar sin plan hasta que terminemos en cualquier tema",
+    aResult: "Protocolo aprobado: plan sencillo, pantalla compartida y derecho a criticar todo.",
+    bResult: "Protocolo aprobado: conversación sin rumbo. Alta probabilidad de perder la noción del tiempo.",
   },
   {
-    question: "Estamos jugando y una pierde de forma bastante humillante:",
-    a: "Aceptar la derrota con dignidad",
-    b: "Acusar inmediatamente a la otra de hacer trampa",
-    aResult: "Respuesta poco creíble. El sistema la ha registrado de todos modos.",
-    bResult: "Conducta estadísticamente más probable. Investigación cerrada.",
+    question: "Si estás de mal humor y yo quiero ayudarte, ¿qué prefieres?",
+    a: "Que intente hacerte reír y distraerte",
+    b: "Que te escuche y no intente solucionar nada",
+    aResult: "Dato importante registrado: distraer primero, analizar después.",
+    bResult: "Dato importante registrado: acompañar sin convertir la conversación en una sesión de soluciones.",
   },
   {
-    question: "Sofi anuncia con seguridad: “yo cocino”. Tu reacción:",
-    a: "Confiar plenamente en el proceso",
-    b: "Abrir una app de domicilios por prevención",
-    aResult: "Nivel de valentía: preocupante. Se recomienda localizar el extintor antes de continuar.",
-    bResult: "Protocolo preventivo correcto. Ninguna objeción por parte del departamento de seguridad.",
+    question: "¿Qué tipo de detalle a distancia te gustaría recibir más seguido?",
+    a: "Algo inesperado: una página, una nota, una sorpresa pequeña",
+    b: "Algo simple y constante: mensajes, audios o llamadas",
+    aResult: "Preferencia detectada: pequeñas sorpresas. Sofi queda oficialmente autorizada para seguir inventando cosas raras.",
+    bResult: "Preferencia detectada: constancia. Menos espectáculo, más estar presente de verdad.",
   },
   {
-    question: "Noche libre sin obligaciones. ¿Qué versión gana?",
-    a: "Videojuegos hasta olvidar la hora",
-    b: "Hablar de cualquier bobada hasta terminar en una conversación de tres horas",
-    aResult: "Pronóstico: competitividad innecesaria, risas y al menos una acusación dudosa.",
-    bResult: "Pronóstico: empezar con un meme y terminar cuestionando media existencia. Bastante probable.",
+    question: "Si solo tenemos 20 minutos para compartir un día, ¿qué prefieres?",
+    a: "Videollamada rápida solo para vernos y hablar un rato",
+    b: "Mandarnos audios y contarnos cómo estuvo el día",
+    aResult: "Resultado: poco tiempo, pero compartido en tiempo real. El expediente lo considera suficiente para salvar una noche.",
+    bResult: "Resultado: conversación sin reloj. Ideal para días donde coincidir se vuelve imposible.",
   },
   {
-    question: "Podemos teletransportarnos durante dos horas a cualquier sitio:",
-    a: "Un lugar bonito y tranquilo donde nadie nos moleste",
-    b: "Un sitio absurdo solo porque nos daría risa estar ahí",
-    aResult: "Decisión registrada: paz, conversación y probablemente comida. El expediente lo aprueba.",
-    bResult: "Decisión registrada: cero sentido práctico. Por eso mismo tiene potencial.",
+    question: "Cuando no coincidimos por horarios o trabajo, ¿qué te gustaría que hiciéramos?",
+    a: "Dejarnos mensajes para responder cuando podamos",
+    b: "Guardar lo importante para una llamada después",
+    aResult: "Sistema asincrónico aprobado. Cero presión por responder inmediatamente.",
+    bResult: "Sistema de llamada pendiente aprobado. Algunas historias merecen ser contadas viendo la reacción de la otra.",
+  },
+  {
+    question: "¿Qué crees que nos ayuda más a sentirnos cerca estando lejos?",
+    a: "Compartir cosas pequeñas del día, aunque parezcan tontas",
+    b: "Reservar momentos especiales solo para nosotras",
+    aResult: "Hallazgo: la cercanía también se construye con cosas pequeñas y cotidianas.",
+    bResult: "Hallazgo: tener espacios solo de ustedes sigue siendo importante aunque sea detrás de una pantalla.",
+  },
+  {
+    question: "Si tuvieras que poner una regla para nuestra distancia, ¿cuál sería?",
+    a: "Nunca asumir que la otra sabe lo que sentimos: decirlo",
+    b: "No convertir la distancia en presión: hablar cuando podamos",
+    aResult: "Regla registrada: menos suposiciones, más claridad. Bastante útil para este expediente.",
+    bResult: "Regla registrada: presencia sin presión. Estar cerca no siempre significa estar disponibles todo el tiempo.",
   },
 ];
 
@@ -352,7 +366,7 @@ function openFolder(type) {
   }
 
   if (type === "choices") {
-    openModal("CARPETA 03 · DECISIONES", "Decisiones de máxima importancia", choiceMarkup());
+    openModal("CARPETA 03 · DECISIONES", "Decisiones entre nosotras", choiceMarkup());
     bindChoices();
     return;
   }
