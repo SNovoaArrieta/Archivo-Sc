@@ -1,99 +1,78 @@
-# Dirección visual — Operación Banana
+# Operación Banana — diseño y flujo definitivo
 
-Este documento contiene decisiones **bloqueadas**. No reinterpretarlas sin aprobación de Sofi.
+## Qué debe sentirse
 
-## Objetivo visual
+Una aventura corta y cinematográfica para jugar durante una videollamada. No es una landing page ni una colección de pantallas con botones.
 
-El resultado debe sentirse como un pequeño videojuego ilustrado y pulido, no como una landing page ni como una demo de HTML.
+Prioridad: computador, 16:9, 5–10 minutos.
 
-Formato prioritario: **16:9 en computador** para compartir pantalla durante una videollamada.
+## Dirección visual
 
-## Estética
-
-- cartoon 3D / ilustración cinematográfica
-- cálida
-- bonita
-- divertida
-- profundidad visual
+- ilustración cartoon cinematográfica
+- luz cálida y profundidad
 - escenarios completos
-- iluminación ambiental
-- vegetación, caminos, árboles, montañas y pequeños detalles
-- UI integrada en el arte
-- animación ambiental suave
-
-Evitar:
-
-- grids visibles
-- cajas web genéricas
-- personajes hechos únicamente con círculos y CSS básico
-- emojis utilizados como arte principal
-- letras S/D sobre muñecos para identificarlos
-- rediseñar los personajes entre escenas
-- exceso de texto sobre el escenario
+- una estética consistente de principio a fin
+- UI discreta e integrada
+- personajes reutilizados en todas las escenas
 
 ## Personajes
 
-Crear **un solo asset maestro por personaje**, idealmente SVG, y reutilizarlo en todas las escenas.
-
 ### Sofi
-
-- personaje amarillo pequeño
-- cabello corto / recogido
-- gafas grandes
+- personaje amarillo
+- cabello oscuro corto/recogido
+- gafas
 - ropa azul
-- expresión divertida
-- personalidad algo impulsiva
+- energía impulsiva y divertida
 
 ### Daiana
-
-Daiana debe ser un personaje independiente, no “Sofi con otra peluca”.
-
-Reglas obligatorias:
-
+- personaje amarillo
 - cabello castaño oscuro
-- cabello largo
-- cabello suelto
-- cabello visible cayendo por ambos lados
-- cabello visible por detrás del cuerpo
-- diseño algo más delicado
-- ropa diferente de Sofi
-- expresiones propias
-- mismo diseño en todas las escenas
+- largo y suelto
+- cabello visible a ambos lados y detrás
+- ropa distinta
+- personalidad más tranquila
+- nunca debe verse como Sofi con una peluca
 
-## Flujo
+## Estructura de misiones
 
-1. Portada: Operación Banana.
-2. Robo de la Banana Dorada.
-3. Elección: correr / seguir disimuladamente.
-4. Persecución jugable.
-5. Encuentro con guardia.
-6. Elección: bailar / ofrecer otra banana.
-7. Recuperación de la banana.
-8. Escena final nocturna tranquila.
+### Prólogo — El robo
+Se presenta la Banana Dorada y el ladrón escapa. Daiana decide si correr o intentar seguirlo con discreción. Ambas rutas llegan naturalmente a la persecución.
 
-## Persecución
+### Misión 01 — Sigue el rastro
+Nivel lateral jugable. Sofi se mueve con A/D o flechas y salta con W, flecha arriba o espacio. Daiana corre a su lado. Hay obstáculos, pero no Game Over.
 
-Sofi se controla con:
+### Misión 02 — La entrada
+La bóveda está bloqueada. Dos soluciones visuales:
+- usar la pieza que encaja en el mecanismo
+- tocar el botón NO TOCAR
 
-- WASD o flechas
-- salto con W, flecha arriba o espacio
+Las dos funcionan de forma distinta y graciosa.
 
-Daiana corre automáticamente junto a Sofi.
+### Misión 03 — El guardia
+La banana ya está visible. Daiana decide:
+- distraer al guardia bailando
+- ofrecerle otra banana
 
-No hay Game Over.
+### Misión 04 — Recuperación
+Cinemática corta: recuperan la Banana Dorada.
 
-Los choques generan una reacción corta y graciosa, pero el juego continúa.
+### Nivel secreto — El jardín
+Mapa cenital sin cuadrícula. Sofi debe encontrar:
+- LEGO
+- música
+- corazón
 
-## Experiencia
+Después llega hasta Daiana. No hay vidas, cronómetro ni puntuación.
 
-Debe poder completarse en unos 5–10 minutos.
+### Final
+Escena nocturna tranquila con Sofi, Daiana y la Banana Dorada. Se muestra el mensaje final sin modificar.
 
-Daiana participa verbalmente durante la videollamada eligiendo qué hacer. Sofi maneja el computador.
+## Regla de diseño
 
-La intención es que Daiana se ría y se sienta importante, sin obligarla a hacer configuraciones ni aprender controles.
+Cada misión debe tener:
+1. un objetivo visible,
+2. una acción concreta,
+3. una consecuencia visual,
+4. un avance claro a la siguiente parte.
 
-## Final
-
-El mensaje final vive en `js/scenes.js` como `FINAL_MESSAGE`.
-
-No modificar su redacción sin aprobación explícita de Sofi.
+No agregar misiones solo para alargar el juego.
